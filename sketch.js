@@ -35,10 +35,13 @@ function setup() {
   bow.scale = 1;
   
    score = 0  
- redB= new Group();
- 
+  redB= new Group();
+  //Create a group for greenBalloon
+ //Create a group for blueBalloon
+ //Create a group for pinkBalloon
+  
   arrowGroup= new Group();
-
+ 
   
 }
 
@@ -92,9 +95,24 @@ function draw() {
   scene.velocityX = 0;
 }
 
+ 
+//Create the isTouching() 
+//Use destroyEach() to destroy the greenBalloon
+//Use destroyEach() to destroy arrowGroup.
+//Increment the score by 3.
 
 
 
+//Create the isTouching() 
+//Use destroyEach() to destroy the blueBalloon
+//Use destroyEach() to destroy arrowGroup.
+//Increment the score by 2.
+
+
+//Create the isTouching()
+//Use destroyEach() to destroy the pinkBalloon group
+//Use destroyEach() to destroy arrowGroup.
+//Increment the score by 1.
 
  }
   
@@ -118,6 +136,7 @@ function blueBalloon() {
   blue.velocityX = 3;
   blue.lifetime = 150;
   blue.scale = 0.1;
+ //Add the group
 }
 
 function greenBalloon() {
@@ -126,6 +145,7 @@ function greenBalloon() {
   green.velocityX = 3;
   green.lifetime = 150;
   green.scale = 0.1;
+  //Add the group
 }
 
 function pinkBalloon() {
@@ -134,8 +154,9 @@ function pinkBalloon() {
   pink.velocityX = 3;
   pink.lifetime = 150;
   pink.scale = 1
-
+ //Add the group
 }
+
 
 // Creating  arrows for bow
  function createArrow() {
@@ -147,5 +168,5 @@ function pinkBalloon() {
   arrow.lifetime = 100;
   arrow.scale = 0.3;
   arrowGroup.add(arrow);
-
+   
 }
